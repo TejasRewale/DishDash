@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        function main() {
+            let inprocess = true;
+            while (inprocess) {
+                const operator = prompt("it is map,filter or exit");
+                if (operator === "map") {
+                    let doubled = numbers.map(num => num * 2);
+                    console.log(doubled);
+                }
+                else if (operator = "filter") {
+                    let divide = numbers.filter(num => num % 2 === 0);
+                    console.log(divide);
+                }
+                else if(operator="exit"){
+                    inprocess=false;
+                    console.log("Exiting");
+                }
+                else{
+                    console.log("Invalid Operator");
+                }
+            }
+        }
+        main();
+    </script>
+</body>
+
+</html>

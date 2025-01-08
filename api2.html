@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Dog Breeds</h1>
+    <div id="text"></div>
+    <script>
+ const requestOptions = {
+            method: "GET",
+            redirect: "follow"
+        };
+        fetch("https://dog.ceo/api/breeds/list/all", requestOptions)
+            .then((response) => response.json())
+            .then((result) => {
+                const breeds = result.message;
+                const breedscontainer = document.querySelector("#text");
+                breedscontainer.innerHTML = "";
+                const ul=document.createElement("ul");
+                for(const breed in breeds){
+                    const li= document.createElement("li");
+                    li.textContent=breed;
+                }
+                    breedscontainer.appendChild(li);
+            })
+            .catch ((error) => {
+                document.getElementById("text").textContent="error loading breeds.";
+            console.error("Error",error);
+        });
+    </script>
+</body>
+</html>

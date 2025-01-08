@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <div class="logo"></div>
+        <div class="menu"></div>
+        <div class="icons"></div>
+    </div>
+    <footer>
+        <div class="mainf">
+            <div class="mainf1">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+            </div>
+            <div class="mainf2"><i class="fa fa-phone" aria-hidden="true"></i></div>
+            <div class="mainf3"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+        </div>
+    </footer>
+    <script> 
+    let num;
+    let num1;
+      function array() {
+            let inprocess = true;
+            while(inprocess) {
+                const operator = prompt("Is It add,sub , mul or exit");
+                if(operator ==="add"){
+                    const element = parseInt(prompt("Enter The First Number:"), 10);
+                    const element1 = parseInt(prompt("Enter The second Number: "), 10);
+                    console.log("addion of number :"+(element+element1));
+
+                }
+              else if(operator ==="sub"){
+                    const element = parseInt(prompt("Enter The First Number:"), 10);
+                    const element1 = parseInt(prompt("Enter The second Number: "), 10);
+                    console.log("subtraction of number :"+(element-element1));
+            }
+            else if(operator ==="mul"){
+                    const element = parseInt(prompt("Enter The First Number:"), 10);
+                    const element1 = parseInt(prompt("Enter The second Number: "), 10);
+                    console.log("multiplication of number :"+(element*element1));
+            }
+            else if (operator === "exit") {
+                    inprocess = false;
+                    console.log("Exiting");
+                }
+                else {
+                    console.log("Invalid Operator");
+                }
+        }
+    }
+    array();
+    </script>
+</body>
+</html>

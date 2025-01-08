@@ -1,0 +1,173 @@
+div.header {
+  display: flex;
+  width: 100%;
+  background-color: whitesmoke;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+}
+
+.menu ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  justify-content: center;
+}
+
+li {
+  font-size: 20px;
+}
+
+.menu li:hover {
+  color: red;
+}
+
+.menu li:hover {
+  text-decoration: underline;
+}
+
+div .logo {
+  justify-content: center;
+  display: flex;
+  width: 33.3%;
+  padding: 10px;
+}
+
+.logo img {
+  height: 120px;
+  width: 120px;
+}
+
+div .menu {
+  width: 33.3%;
+  padding: 40px;
+}
+
+div.icons {
+  justify-content: center;
+  display: flex;
+  width: 33.3%;
+  gap: 50px;
+  padding: 50px;
+}
+
+.icons i {
+  font-size: 20px;
+}
+
+.info {
+  margin: 1rem;
+  padding: 100px 0px 0px 0px;
+  text-align: center;
+  background-color: white;
+  z-index: 7;
+}
+.i1 {
+
+  display: inline-block;
+  vertical-align: middle;
+  margin: 30px;
+}
+
+.i1 img {
+  height: 300px;
+  width: 300px;
+  -webkit-box-reflect: right 0px linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4));
+}
+
+.i2 {
+
+  display: inline-block;
+  vertical-align: middle;
+  margin: 30px;
+  font-size: 25px;
+}
+.p{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.p p{
+  font-size: 30px;
+  font-style: italic;
+}
+.info2 {
+  width: 100%;
+  padding: 10px 0px 10px 0px;
+  background-color: lightgrey;
+}
+.maini {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+
+}
+.info3 {
+  width: 100%;
+  padding: 10px 0px 10px 0px;
+  background-color: lightgrey;
+}
+img assets/image/t3.avif{
+  width: 100%;
+  height: auto;
+}
+.maini1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+footer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+  background-color: aliceblue;
+
+}
+
+.info1 ul {
+  width: 100%;
+  display: contents;
+  justify-content: center;
+  text-align: justify;
+  list-style: none;
+}
+
+.info1 ul li {
+  text-decoration-line: underline;
+}
+
+div.icons2 img {
+  height: 120px;
+  width: 120px;
+  padding: 20px;
+}
+
+.icons2 img i {
+  display: contents;
+  justify-content: center;
+  text-align: justify;
+  list-style: none;
+
+}
+
+div.icons1 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+div.row-80 {
+  display: flex;
+  justify-content: center;
+  background-color: aliceblue;
+  padding: 10px;
+}

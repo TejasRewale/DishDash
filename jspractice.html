@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let numbers = [];
+        function main() {
+             let isrunning = true;
+            while (isrunning ) {
+                const operator = prompt("is it push,pop,exit");
+                if (operator === "push") {
+                    const element=parseInt(prompt("enter the number:"),10);
+                    if(!isNaN(element)){
+                    numbers.push(element);
+                    console.log("Array After push:"+numbers);
+                    }else{
+                        console.log("please enter a valid number");
+                    }
+                }
+                else if (operator === "pop"){
+                    if(numbers.length>0){
+                        const poppedelement=numbers.pop();
+                        console.log("Array After pop" +numbers );
+                        console.log("pop element"+poppedelement);
+                    }else{
+                        console.log("array is empty");
+                    }
+                }
+                   else if(operator==="exit")  {
+               let  isrunning=false;
+                 console.log("Existing");
+                }else{
+                    console.log("Invalid operation please enter 'push','pop',or'exit'.")
+                }
+            }
+        }
+        main();
+
+    </script>
+</body>
+
+</html>

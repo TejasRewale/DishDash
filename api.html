@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #dog-images {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div id="dog-images"></div>
+    </div>
+    <script>
+        const requestOptions = {
+            method: "GET",
+            redirect: "follow"
+        };
+
+        fetch("https://dog.ceo/api/breed/hound/images", requestOptions)
+            .then((response) => response.json())
+            .then((data) => {
+                const first = document.querySelector("#dog-images");
+                const imgfirst = data.message;
+
+                imgfirst.forEach((url) => {
+                    const img = document.createElement("img");
+                    img.src = url;
+                    img.alt = "Dog Image";
+                    first.appendChild(img);
+
+                });
+            })
+            .catch((error) => console.error(error));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>javascript</h1>
+    <script>
+        let numbers = [];
+        function array() {
+            let inprocess = true;
+            while(inprocess) {
+                const operator = prompt("Is It unshift,shift or exit");
+                if (operator === "unshift") {
+                    const element = parseInt(prompt("enter the number for unshift:"), 10);
+                    numbers.unshift(element);
+                    console.log("Array After unshift:" + numbers);
+                }
+                else if (operator === "shift") {
+                    numbers.shift();
+                    console.log("Array after shift:" + numbers);
+                }
+                else if (operator === "exit") {
+                    inprocess = false;
+                    console.log("exiting");
+                }
+                else {
+                    console.log("Invalid operator")
+                }
+            }
+        }
+        array();
+    </script>
+</body>
+
+</html>

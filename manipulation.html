@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">Hello Tejas</h1>
+    <p class="text">Welcome To The DOM Manipulation Tutorial</p>
+    <script>
+        let heading = document.getElementById("heading");
+        console.log(heading);
+        
+    </script>
+      <h1 id="heading1">Hello Tejas</h1>
+      <p class="text1">Welcome To The DOM Manipulation Tutorial</p>
+    <script>
+        let text1= document.getElementsByClassName("text1");
+        console.log(text1);
+    </script>
+      <h1 id="heading2">Hello Tejas</h1>
+      <p class="text2">Welcome To The DOM Manipulation Tutorial</p>
+      <script>
+        let heading2=document.getElementsByTagName("h1");
+        console.log(heading2);
+      </script>
+        <h1 id="heading3">Hello Tejas</h1>
+        <p class="text3">Welcome To The DOM Manipulation Tutorial</p>
+        <script>
+            let h1= document.querySelector("h1");
+            console.log(h1);
+        </script>
+</body>
+</html>

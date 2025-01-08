@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .header {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-areas: "logo menu icons";
+      width: 100%;
+      background-color: cornsilk;
+      align-items: center;
+      width: 100%;
+      z-index: 7;
+    }
+
+    .menu ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+      justify-content: center;
+    }
+
+    li {
+      font-size: 20px;
+    }
+
+    .menu li:hover {
+      color: red;
+    }
+
+    .menu li:hover {
+      text-decoration: underline;
+    }
+
+    .logo {
+      padding: 10px;
+      grid-area: logo;
+      text-align: center;
+    }
+
+    .logo img {
+      height: 120px;
+      width: 120px;
+    }
+
+    .menu {
+      padding: 40px;
+      grid-area: menu;
+    }
+
+    .icons {
+      padding: 50px;
+      grid-area: icons;
+    }
+
+    .icons i {
+      font-size: 20px;
+    }
+
+    aside {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 200px;
+      transform: translateX(-200px);
+      background-color: lightblue;
+      height: 100vh;
+      z-index: 9;
+    }
+
+    .hambergur {
+      display: none;
+    }
+
+    @media (max-width:520px) {
+      .header {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "menu logo  icons";
+      }
+
+      .logo img {
+        height: 80px;
+        width: auto;
+      }
+
+      .hambergur {
+        display: block;
+        grid-area: menu;
+      }
+
+      .icons {
+        padding: 5px;
+      }
+
+      .menu {
+        display: none;
+      }
+      .menu ul{
+        list-style: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <div class="hambergur">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <div class="logo">
+      <img src="assets/image/logo.avif" alt="">
+    </div>
+    <div class="menu">
+      <ul>
+        <li>Home</li>
+        <li>Kids</li>
+        <li>Mens</li>
+        <li>Womens</li>
+      </ul>
+    </div>
+    <div class="icons">
+      <i class="fa fa-search" aria-hidden="true"></i>
+      <i class="fa fa-heart" aria-hidden="true"></i>
+      <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+      <i class="fa fa-user" aria-hidden="true"></i>
+    </div>
+  </div>
+  <aside>
+    <ul>
+      <li>Home</li>
+      <li>Kids</li>
+      <li>Mens</li>
+      <li>Womens</li>
+    </ul>
+    <p class="close">close</p>
+  </aside>
+  <script>
+    let menu = document.querySelector(".hambergur");
+    menu.addEventListener("click", function () {
+      let sidebar = document.querySelector("aside");
+      sidebar.style.transform = "translateX(0px)";
+    });
+    let close = document.querySelector(".close");
+    close.addEventListener("click", function () {
+      let sidebar = document.querySelector("aside");
+      sidebar.style.transform = "translateX(-200px)";
+    });
+  </script>
+</body>
+
+</html>

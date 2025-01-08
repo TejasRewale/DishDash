@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        try {
+            function doSomething() {
+                return new Promise((resolve) => {
+                    setTimeout(() => {
+                        console.log("doSomething completed.");
+                        resolve("Result from doSomething");
+                    }, 1000);
+                });
+            }
+            function doSomethingElse(result) {
+                return new Promise((resolve) => {
+                    setTimeout(() => {
+                        console.log("doSomethingElse completed with: " + result);
+                        resolve("Result from doSomethingElse");
+                    }, 1000);
+                });
+            }
+            function doAnotherThing(newResult) {
+                return new Promise((resolve) => {
+                    setTimeout(() => {
+                        console.log("doAnotherThing completed with: " + newResult);
+                        resolve("Final result");
+                    }, 1000);
+                });
+            }
+            doSomething()
+                .then((result) => {
+                    return doSomethingElse(result);
+                })
+                .then((newResult) => {
+                    return doAnotherThing(newResult);
+                })
+                .then((finalResult) => {
+                    console.log("Final result received: " + finalResult);
+                })
+                .catch((error) => {
+                    console.error("Error:", error);
+                });
+        }
+        catch (error) {
+            console.log("An error occurred: " + error.message);
+        } finally {
+            console.log("This block runs no matter what.");
+        }
+    </script>
+</body>
+
+</html>

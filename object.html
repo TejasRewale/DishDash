@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        let employee = {
+            name: "Tejas",
+            age: 19,
+            job: "devloper",
+        };
+        console.log(employee.name);
+
+    </script>
+    <script>
+        let employee1 = {
+            name: "Tejas",
+            greet: function () {
+                console.log("Hello" + this.name);
+            },
+        };
+        employee1.greet();
+
+    </script>
+    <script>
+        let employee2 = {
+            name: "Tejas",
+            age: 19,
+            job: "developer",
+        };
+        employee2.age = 20;
+        console.log(employee2);
+    </script>
+    <script>
+        let employee3 = {
+            name: "Tejas",
+            age: "19",
+            job: "developer"
+        };
+        delete employee3.age;
+        console.log(employee3);
+    </script>
+    <script>
+        let employee4 = {
+            name: "Tejas",
+            age: 19,
+            job: "developer",
+        };
+        for (let key in employee4) {
+            console.log(key + ":" + employee4[key]);
+        }
+    </script>
+
+    <script>
+        let numbers = [1, 2, 3, 4, 5];
+        let [first, second] = numbers;
+        console.log(first);
+        console.log(second);
+    </script>
+    <script>
+        let person = { name: "tejas", age: 19, job: "developer", };
+        let { name: newname, job: occupation } = person;
+        console.log(newname);
+        console.log(occupation);
+    </script>
+    <script>
+        let number1 = [1, 2, 3, 4, 5];
+        let [first1, , third] = numbers;
+        console.log(first1);
+        console.log(third);
+    </script>
+    <script>
+        let person1 = { name: "tejas", age: 19, job: "developer", };
+        let { name, job } = person1;
+        console.log(name);
+        console.log(job);
+    </script>
+    <script>
+        let person2 = { name: "tejas", age: 19, job: "developer", };
+        let { name: var1, job: var2 } = person2;
+        console.log(var1);
+        console.log(var2);
+    </script>
+    <script>
+        const students =
+        {
+            name: "tejas",
+            score: 90,
+        };
+        for (let key in students) {
+            console.log(key + ":" + students[key]);
+        }
+    </script>
+    <script>
+        const students1 = [{
+            name: "tejas",
+            scores: { Maths: 70, Physics: 40, Chemistry: 55 }
+        },
+        {
+            name:"kunal",
+            scores:{Maths:85,Physics:68,Chemistry:75}
+        },
+        {
+            name:"scahin",
+            scores:{Maths:60,Physics:39,Chemistry:56}
+        }
+        ];
+        console.log(students1);
+    </script>
+</body>
+
+</html>

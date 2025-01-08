@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Function that returns a promise
+        let myPromise = new Promise((resolve, reject) => {
+            // Simulating an asynchronous task using setTimeout
+            let taskCompletedSuccessfully = false; // Change to false to trigger
+          
+            setTimeout(() => {
+                if (taskCompletedSuccessfully) {
+                    resolve("Task completed successfully!");
+                } else {
+                    reject("Task failed!");
+                }
+            }, 2000); // Simulate 2-second delay
+        });
+        // Handling the promise
+        myPromise
+            .then((message) => {
+                console.log(message); // Outputs "Task completed successfully!" if
+              
+            })
+            .catch((error) => {
+                console.log(error); // Outputs "Task failed!" if rejected
+            });
+    </script>
+</body>
+
+</html>

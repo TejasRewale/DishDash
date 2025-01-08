@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const students={
+            marks:[
+                {
+                    name:"tejas",
+                    mark:90,
+                    ispass:true,
+                },
+                {
+                    name:"kunal",
+                    mark:34,
+                    ispass:false,
+                },
+                {
+                    name:"sachin",
+                    mark:55,
+                    ispass:true,
+                },
+                {
+                    name:"tejas",
+                    mark:60,
+                    ispass:true,
+                },
+                {
+                    name:"satym",
+                    mark:30,
+                    ispass:false,
+                },
+            ],
+        };
+        function getpassstudents(students){
+            return students.marks
+            .filter((pass)=>pass.ispass)
+            .map((pass)=>pass.mark);
+        }
+        console.log(getpassstudents(students));
+    </script>
+</body>
+</html>

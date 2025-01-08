@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Javascript
+    </h1>
+    <script>
+        /* function declaration*/
+        function arithmetic(a, b, c, d) {
+            let sum = a + b * c % d;
+            console.log("arithmetic: " + sum);
+        }
+        arithmetic(2, 4, 6, 8);
+
+        /*function expression*/
+        const maths = function (a, b) {
+            let square = a * a;
+            let cube = b * b * b;
+            console.log("square of number is: " + square);
+            console.log("Cube of Number is: " + cube);
+        }
+        maths(3, 5);
+        /* Return Values*/
+        function add(a, b, c, d) {
+            return a + b + c + d;
+        }
+        let answer = add(3, 5, 7, 18);
+        console.log("Answer is: " + answer);
+        /*practice*/
+        function declaration(p, q, r) {
+            return p * q * r;
+        }
+        let ans = declaration(3, 7, 5);
+        console.log("print: " + ans);
+       
+    function game(a,b){
+        return i%a===0;
+        for(i=0;i>=100; i++){}
+
+    }
+//Return Values...!
+function practice(a,b,c,d){
+    return a /b*c+d;
+}
+let result=practice(2,4,6,8);
+console.log(result);
+
+function practice1(a){
+    return a;
+}
+let result1=practice1("heloo  world");
+console.log(result1);
+//arrow function
+const greet=(x,y)=>x-y;
+console.log(greet(9,5));
+
+//clousers 
+
+function outerfunction(){
+    let globalvariable=5;
+    function innerfunction(){
+        console.log(globalvariable*globalvariable);
+    }
+    return innerfunction;
+}
+const clouser = outerfunction();
+clouser();
+
+//counter
+
+function createcounter(){
+    let count=5;
+    return function(){
+        count ++;
+        return count;
+    };
+}
+const counter=createcounter();
+console.log(counter());
+console.log(counter());
+console.log(counter());
+console.log(counter());
+console.log(counter());
+console.log(counter());
+console.log(counter());
+console.log(counter());
+console.log(counter());
+
+    </script>
+</body>
+
+</html>

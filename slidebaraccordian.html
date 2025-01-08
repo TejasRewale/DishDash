@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body{
+            margin: 0;
+        }
+        .header {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-areas: "logo menu icons";
+            width: 100%;
+            background-color: cornsilk;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 120px;
+            width: 120px;
+        }
+
+        .logo {
+            padding: 10px;
+            grid-area: logo;
+            text-align: center;
+        }
+
+        .menu ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            justify-content: center;
+        }
+
+        .menu {
+            padding: 40px;
+            grid-area: menu;
+        }
+
+        .icons {
+            padding: 50px;
+            grid-area: icons;
+        }
+
+        aside {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px;
+            transform: translateX(-200px);
+            transition: 2s;
+            background-color: lightblue;
+            height: 100vh;
+            z-index: 9;
+        }
+
+        .hambergur {
+            display: none;
+        }
+
+        @media (max-width:520px) {
+            .header {
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-areas: "menu logo  icons";
+            }
+
+            .logo img {
+                height: 80px;
+                width: auto;
+            }
+
+            .icons {
+                padding: 5px;
+            }
+
+            .hambergur {
+                display: block;
+                grid-area: menu;
+            }
+
+            .menu {
+                display: none;
+            }
+        }
+        </style>
+</head>
+<body>
+    
+</body>
+</html>

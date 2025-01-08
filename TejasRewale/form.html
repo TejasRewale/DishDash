@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      form {
+        width: max-content; 
+        border: 1px solid #111;
+        background-color: lightblue;
+      }
+      .center{
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+   
+    <div class="center">
+        <form action=""  >
+            <h1 style="text-align: center">ADMISSION FORM</h1>
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              placeholder="STUDENT NAME"
+            /><br />
+            <p>GENDER:</p>
+              <input type="radio" id="male" name="fav_language" value="male" />  
+            <label for="male">MALE</label><br />
+              <input type="radio" id="html" name="fav_language" value="HTML" />  
+            <label for="html">FEMALE</label><br />
+            <input type="text" id="fname" name="fname" placeholder="GMAIL ID" /><br />
+            <input type="text" id="fname" name="fname" placeholder="PASSWORD" /><br />
+            <p>SUBJECTS:</p>
+            <input type="checkbox" id="subjects" name="subjects" value="PYTHON" />
+            <label for="subject"> PYTHON</label><br />
+            <input
+              type="checkbox"
+              id="subjects"
+              name="subjects"
+              value="APPPLIED MATHEMATICS"
+            />
+            <label for="subject">APPPLIED MATHEMATICS</label><br />
+            <input
+              type="checkbox"
+              id="subjects"
+              name="subjects"
+              value="DATA STRUCTURES"
+            />
+            <label for="subject">DATA STRUCTURES</label><br />
+            <input
+              type="checkbox"
+              id="subjects"
+              name="subjects"
+              value="COMPUTER NETWORKS"
+            />
+            <label for="subject">COMPUTER NETWORKS</label><br />
+            <label for="c">HOBBIES:</label>
+            <select id="c" name="c">
+              <option value="READING">READING</option>
+              <option value="SLEEPING">SLEEPING</option>
+              <option value="SINGING">SINGING</option>
+              <option value="DANCING">DANCING</option>
+              <option value="OTHER">OTHER</option>
+            </select><br><br>
+            <input type="button" value="submit" />
+          </form>
+    </div>
+  </body>
+</html>

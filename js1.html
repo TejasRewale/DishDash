@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //array manipulation
+
+let numbers=[1,2,3,4,5,6,7,8,9,10];
+numbers.push(11);
+console.log(numbers);
+
+numbers.pop();
+console.log(numbers);
+
+numbers.shift();
+console.log(numbers);
+
+numbers.unshift(20);
+console.log(numbers);
+
+
+let numbers1=[1,2,3,4];
+let sliced=numbers1.slice(2,3);
+console.log(sliced);
+
+numbers1.splice(2,1);
+console.log(numbers1);
+
+
+let numbers2=[1,2,3,4,5,6,7,8,9,10];
+let divide=numbers2.filter(num => num%2===0);
+console.log(divide);
+
+let numbers3=[1,2,3,4,5];
+let doubled=numbers3.map(num => num*2);
+console.log(doubled);
+
+
+let fruits=["apple","banana","orange"];
+fruits.forEach(fruit=>console.log(fruit));
+    </script>
+</body>
+</html>

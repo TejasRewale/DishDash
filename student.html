@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function generatereport(students) {
+            return students.map((student) => {
+                const scores = Object.values(student.scores);
+                const totalscore = scores.reduce((sum, score) => sum + score, 0);
+                const averagescore = (totalscore / scores.length).toFixed(2);
+
+
+                return {
+                    name: student.name,
+                    averagescore: parseFloat(averagescore),
+                };
+            });
+        }
+
+
+        const students = [
+            {
+                name: "Tejas",
+                scores: { maths: 90, scince: 60, english: 70 },
+            },
+            {
+                name: "kunal",
+                scores: { maths: 90, scince: 70, english: 80 },
+            },
+            {
+                name: "sachin",
+                scores: { maths: 50, scince: 60, english: 65 },
+            }
+        ];
+        console.log(generatereport(students));
+    </script>
+</body>
+
+</html>

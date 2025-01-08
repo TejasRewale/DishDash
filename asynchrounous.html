@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function dosomething(callback) {
+            setTimeout(() => {
+                console.log("dosomething completed.");
+                callback("result from dosomething");
+            }, 1000);
+        }
+        function dosomethingelse(result, callback) {
+            setTimeout(() => {
+                console.log("dosomethingelse completed with:" + result);
+                callback("result from domsomethimgelse.");
+            }, 1500);
+        }
+        function doanotherthing(newresult, callback) {
+            setTimeout(() => {
+                console.log("doanotherthing completetd with:" + newresult);
+                callback("final result");
+            }, 2000);
+        }
+        dosomething(function (result) {
+            dosomethingelse(result, function (newresult) {
+                doanotherthing(newresult, function (finalresult) {
+                    setTimeout(() => {
+                        console.log("final result recieved:" + finalresult);
+                    }, 2500);
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

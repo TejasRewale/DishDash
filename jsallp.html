@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const add = (a, b) => {
+            console.log(a + b);
+        }
+        add(9, 2);
+    </script>
+    <script>
+        function test() {
+            let localvar = "i am local";
+            console.log(localvar);
+        }
+        test();
+    </script>
+    <script>
+        a = 10;
+        if (false) {
+
+            console.log("A Is " + a);
+        }
+    </script>
+    <script>
+        function outerFunction() {
+            let outerVariable = "I'm from the outer scope!";
+            function innerFunction() {
+                console.log(outerVariable);
+            }
+            return innerFunction;
+        }
+        const closureExample = outerFunction();
+        closureExample();
+    </script>
+    <script>
+        function createCounter() {
+            let count = 20;
+            return function () {
+                count++;
+                return count;
+            };
+        }
+        const counter = createCounter();
+        console.log(counter()); // Outputs 1
+        console.log(counter()); // Outputs 2
+        console.log(counter()); // Outputs 
+
+    </script>
+</body>
+
+</html>

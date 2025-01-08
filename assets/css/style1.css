@@ -1,0 +1,311 @@
+div.header {
+  display: flex;
+  width: 100%;
+  background-color: whitesmoke;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+}
+
+.menu ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  justify-content: center;
+}
+
+li {
+  font-size: 20px;
+}
+
+.menu li:hover {
+  color: red;
+}
+
+.menu li:hover {
+  text-decoration: underline;
+}
+
+div .logo {
+  justify-content: center;
+  display: flex;
+  width: 33.3%;
+  padding: 10px;
+}
+
+.logo img {
+  height: 120px;
+  width: 120px;
+}
+
+div .menu {
+  width: 33.3%;
+  padding: 40px;
+}
+
+div.icons {
+  justify-content: center;
+  display: flex;
+  width: 33.3%;
+  gap: 50px;
+  padding: 50px;
+}
+
+.icons i {
+  font-size: 20px;
+}
+
+.banner img {
+  width: 100%;
+  height: 50%;
+  z-index: 7;
+}
+
+.images {
+  width: 100%;
+  padding-top: 10px;
+}
+
+.image1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+
+}
+
+div.p {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.p p {
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.image2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+div.p1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.p1 p {
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.image3 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+
+}
+div.p2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.p2 p {
+  font-size: 30px;
+  text-decoration: underline;
+}
+section.bg-orange {
+  background-color: whitesmoke;
+}
+div.info {
+  display: flex;
+  max-width: 60%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid #111;
+  border-bottom: 2px solid #111;
+  padding: 40px 0;
+}
+
+h3 {
+  font-size: 50px;
+}
+
+p {
+  font-size: 25px;
+}
+
+.row-40 {
+  display: flex;
+  width: 35%;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+}
+.new {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 300px;
+}
+.new p {
+  font-size: 20px;
+}
+.new1 {
+  font-size: 100px;
+}
+.cover{
+  display: flex;
+  justify-content: center;
+  background-color: whitesmoke;
+  padding: 200px 0px 200px 0px;
+}
+.main {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+  transition: transform 0.2s;
+  width: 500px;
+  text-align: center;
+}
+h1 {
+  color: #4CAF50;
+}
+label {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-align: left;
+  color: #555;
+  font-weight: bold;
+}
+input {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.wrap button {
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  background-color: #4CAF50;
+  width: 100%;
+  font-size: 16px;
+}
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+  background-color: aliceblue;
+
+}
+
+.info1 ul {
+  width: 100%;
+  display: contents;
+  justify-content: center;
+  text-align: justify;
+  list-style: none;
+}
+
+.info1 li {
+  text-decoration-line: underline;
+}
+
+div.icons2 img {
+  height: 120px;
+  width: 120px;
+  padding: 20px;
+}
+
+.icons2 img i {
+  display: contents;
+  justify-content: center;
+  text-align: justify;
+  list-style: none;
+
+}
+
+div.icons1 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+div.row-80 {
+  display: flex;
+  justify-content: center;
+  background-color: aliceblue;
+  padding: 10px;
+}
+
+.button4 {
+  background-color: #04AA6D;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none
+}
+
+.button i {
+  gap: 5px;
+}
+
+.button4 {
+  border-radius: 12px;
+}
